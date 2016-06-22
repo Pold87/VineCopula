@@ -961,6 +961,7 @@ as.RVM2 <- function(RVine, data, callexp) {
     RVM$BIC <- -2 * like$loglik + log(N) * npar
     RVM$pair.BIC <- -2 * like$V$value + log(N) * npar_pair
     RVM$emptau <- emptaus
+    RVM$pvals <- pvals
 
     ## return final object
     RVM
